@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Вивчаємо JavaScript</title>
+</head>
+
+<body>
+
+<h1>DOM - об'єктна модель документа</h1>
+
+<p>Веб-документ, завантажений у вікно браузера.</p>
+
+<p id="abzac">У результаті такого представлення є змога звертатись до елементів сторінки.</p>
+
+<script>
+
+document.getElementById("abzac").style.color = "blue";
+document.getElementById("abzac").style.fontSize = "24px";
+
+var new_header = document.createElement("h2");
+new_header.innerHTML = "Доданий заголовок";
+document.body.appendChild(new_header);
+
+</script>
+
+</body>
+</html>
